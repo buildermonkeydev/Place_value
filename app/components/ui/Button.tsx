@@ -10,6 +10,7 @@ interface ButtonProps {
   onClick?: (e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>) => void;
   className?: string;
   type?: 'button' | 'submit' | 'reset';
+  style?: React.CSSProperties; // Added style prop
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -20,6 +21,7 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   className = '',
   type = 'button',
+  style, // Added style prop
 }) => {
   const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-md transition-all duration-200';
   
@@ -39,14 +41,14 @@ const Button: React.FC<ButtonProps> = ({
   
   if (href) {
     return (
-      <Link href={href} className={classes} onClick={onClick}>
+      <Link href={href} className={classes} onClick={onClick} style={style}>
         {children}
       </Link>
     );
   }
   
   return (
-    <button type={type} className={classes} onClick={onClick}>
+    <button type={type} className={classes} onClick={onClick} style={style}>
       {children}
     </button>
   );

@@ -6,7 +6,7 @@ import Container from '../ui/Container';
 
 const CTASection: React.FC = () => {
   return (
-    <section className="relative section-padding bg-[#0A1A2F] overflow-hidden min-h-[800px] flex items-center">
+    <section className="relative section-padding bg-[#091319] overflow-hidden min-h-[800px] flex items-center">
       {/* Background grid pattern */}
       <div className="absolute inset-0 opacity-5" style={{
         backgroundImage: `
@@ -19,7 +19,7 @@ const CTASection: React.FC = () => {
       {/* MAIN PV Watermark - MASSIVE - positioned from bottom to 80% */}
       <div className="absolute right-0 bottom-[5%] md:bottom-[0%] opacity-15 pointer-events-none select-none">
         <div className="relative">
-          <span className="text-[40vw] md:text-[38rem] lg:text-[42rem] font-black text-transparent bg-clip-text bg-gradient-to-r from-[#35bfff]/20 to-[#FF6B35]/20 leading-[0.8] block transform translate-x-[20%]">
+          <span className="text-[40vw] md:text-[38rem] lg:text-[44rem] font-black text-transparent bg-clip-text bg-gradient-to-r from-[#55bfff]/20 to-[#FF6B56]/20 leading-[0.8] block transform translate-x-[20%]">
             PV
           </span>
          

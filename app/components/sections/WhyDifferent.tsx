@@ -3,7 +3,7 @@ import Container from '../ui/Container';
 
 const WhyDifferent: React.FC = () => {
   return (
-    <section className="section-padding bg-[#0A1A2F] relative overflow-hidden">
+    <section className="section-padding bg-[#091319] relative overflow-hidden">
       {/* Background grid pattern */}
       <div className="absolute inset-0 opacity-5" style={{
         backgroundImage: `
